@@ -3,7 +3,7 @@ def reverse_list(l):
     """
     Reverses order of elements in list l.
     """
-    return [l[i] for i in reversed(range(len(l)))]
+    return list(reversed(l))
 
 
 def test_reverse_list():
@@ -17,7 +17,7 @@ def reverse_string(s):
     Reverses order of characters in string s.
     """
 
-    return ''.join([s[i] for i in reversed(range(len(s)))])
+    return ''.join(reversed(s))
 
 
 def test_reverse_string():
